@@ -3,16 +3,29 @@
 @include("dbaccess.php");
 @include("access_admin.php");
 
-$rows = getHumansNoDoctors();
-echo '<br><br><br><br><br><br><br><br><select placeholder="Виберіть людину" id="humans-selector">';
-while ($row = mysqli_fetch_row($rows)) {
-    echo "<option value='" . $row[1] . "'>" . $row[0] . "</option>";
-}
-echo '</select>';
+$rows = getHumansNoDoctors($_SESSION["login"]);
 ?>
+<div class="content container centered">
+    <br>
+    <h2>Додати лікаря</h2>
+    <br>
+    <label for="humans-selector">Виберіть аккаунт</label>
+    <?php
+    echo '<select placeholder="Виберіть людину" id="humans-selector"><br><br>';
+    while ($row = mysqli_fetch_row($rows)) {
+        echo "<option value='" . $row[1] . "'>" . $row[0] . "</option>";
+    }
+    echo '</select><br><br>';
+    ?>
+    <label for="specialization">Спеціалізація</label>
+    <input type="text" title="specialization" id="specialization">
+    <br><br>
+    <button onclick="addDoc()">Призначити лікарем</button>
+</div>
 
-<input type="text" title="specialization" id="specialization">
-<button onclick="addDoc()">Призначити лікарем</button>
+<?php
+@include ("footer.php");
+?>
 
 <script>
     function addDoc() {
