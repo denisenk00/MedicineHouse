@@ -14,28 +14,28 @@ Default credentials: sysadm/medhouse
 ## Screenshots
 
 ### Not-authenticated user
-![](resources/1.jpg)
-![](resources/2.jpg)
-![](resources/3.jpg)
-![](resources/4.jpg)
-![](resources/5.jpg)
-![](resources/6.jpg)
+![](resources/1.png)
+![](resources/2.png)
+![](resources/3.png)
+![](resources/4.png)
+![](resources/5.png)
+![](resources/6.png)
 
 ### sysadm
-![](resources/8.jpg)
+![](resources/8.png)
 
 ### Authenticated user
-![](resources/7.jpg)
-![](resources/9.jpg)
+![](resources/7.png)
+![](resources/9.png)
 
 ## Patient
-![](resources/10.jpg)
+![](resources/10.png)
 
 ### Doctor
-![](resources/11.jpg)
-![](resources/12.jpg)
-![](resources/13.jpg)
-![](resources/14.jpg)
-![](resources/15.jpg)
-![](resources/16.jpg)
-![](resources/17.jpg)
+![](resources/11.png)
+![](resources/12.png)
+![](resources/13.png)
+![](resources/14.png)
+![](resources/15.png)
+![](resources/16.png)
+![](resources/17.png)
